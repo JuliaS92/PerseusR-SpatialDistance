@@ -27,7 +27,7 @@ id <- annotations[[argp$id]]
 library(SpatialDistance)
 distances <- pairwise_distances(data)
 distances_annotated <- annotate_distances(distances, id)
-result <- filterTopn(distances_annotated, argp$topn)
+result <- filter_topn(distances_annotated, argp$topn)
 
 # Write Perseus output
 output <- matrixData(main = result['distance'],
