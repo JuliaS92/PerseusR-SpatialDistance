@@ -23,3 +23,10 @@ annotate_distances <- function(distances, id) {
 
   return(distances_m)
 }
+
+#' Filter shortest distances
+filterTopn <- function(distances_m, topn) {
+  distances_short <- distances_m[order(distances_m$distance) <= topn,]
+
+  return(distances_short)
+}
