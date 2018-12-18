@@ -24,7 +24,7 @@ stopifnot(argp$id %in% names(annotations))
 id <- annotations[[argp$id]]
 
 # Analyse data
-library(SpatialDistance)
+library(PerseusR-SpatialDistance)
 distances <- pairwise_distances(data)
 distances_annotated <- annotate_distances(distances, id)
 result <- filter_topn(distances_annotated, argp$topn)
