@@ -7,4 +7,6 @@ pairwise_distances <- function(data) {
 
   distances[upper.tri(distances)] <- NA
   diag(distances) <- NA
+
+  return(distances)
 }
