@@ -19,7 +19,7 @@ annotate_distances <- function(distances, id) {
 
   require(data.table)
   distances_m <- melt(as.data.table(distances_df), value.name = 'distance', variable.name = 'id_2', id.vars = 'id_1',
-       na.rm = TRUE)
+       na.rm = TRUE, variable.factor = FALSE)
 
   return(as.data.frame(distances_m))
 }
