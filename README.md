@@ -25,5 +25,5 @@ To try whether everything works in Perseus, you can follow these steps:
 
  - Generate a random matrix with the default parameters
  - Launch External > Matrix=>R
- - Browse for FitlerTopDistances.R
+ - Browse for FilterTopDistances.R
  - provide ‘–-id Name’ as additional argument
