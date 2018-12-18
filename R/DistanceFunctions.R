@@ -21,7 +21,7 @@ annotate_distances <- function(distances, id) {
   distances_m <- melt(as.data.table(distances_df), value.name = 'distance', variable.name = 'id_2', id.vars = 'id_1',
        na.rm = TRUE)
 
-  return(distances_m)
+  return(as.data.frame(distances_m))
 }
 
 #' Filter shortest distances
